@@ -1,0 +1,112 @@
+html{background-color: gray}
+
+body{font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-variant: small-caps;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    margin: auto auto; 
+}
+
+header{
+  text-align: left;
+  font-size: 50%;
+  border-style: double dotted;
+  background-color: whitesmoke;
+}
+
+h1, h2, p{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+aside{text-align: right;}
+
+hr{
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  align-items: center;
+
+  /*
+  display: grid
+  place-items: center
+  */
+}
+
+@media(max-width:600px){
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ol>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+  display: block; 
+  position: relative; 
+  margin: 10px;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-size: 100% 100%;
+  cursor: pointer;
+  /* transition: .3s all ease; */
+}
+
+
+.card:hover{
+  display: block;
+  flex: 2;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+.card>a{
+    display: grid;
+    place-items: center;
+    color: black;
+    text-shadow: 2px 1px;
+}
+
+a {
+  display: block;
+  padding: 15px 10px 17px 13px;
+  text-decoration: none;
+  width: 250px;
+  height: 350px;
+  color: #535a60;
+}
+
+a:hover {
+  color: crimson;;
+}
+
+.no-proj{
+
+}

@@ -1,0 +1,1 @@
+This project is an exercise in the creation of a web page. 

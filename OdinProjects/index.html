@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Projects</title>
+</head>
+<body>
+    <h1 id="top">My Odin Projects</h1>
+    <aside>This webpage was made by Abdoulaye Diallo.</aside>
+
+    <br>
+    <nav>
+        <strong>TO NAVIGATE THROUGH PAGE</strong>
+        <ol>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ol>    
+    </nav>
+    <hr>
+
+    <div id="intro">
+        <h2 id="intro">Introduction</h2>
+        <p>
+            Hello I am Abdoulaye, on this page you will find the projects that I have completed by following the Odin Project. 
+        </p>
+        <p>Below you will find :</p>
+        <ul id="projectList"></ul>
+    </div>
+      
+    <hr>
+      
+    <div class="container" id="projects">
+        <div class="card" style="background-image: url('Recipes/images/Collage_reps.jpeg');">
+            <a href="Recipes/index.html">Odin Recipes</a>
+        </div>
+        
+        <div class="card">
+            <a href="">Project to come</a>
+        </div>
+        
+        <div class="card">
+            <a href="">Project to come</a>
+        </div>
+        
+        <div class="card">
+            <a href="">Project to come</a>
+        </div>
+        
+        <div class="card">
+            <a href="">Project to come</a>
+        </div>
+    
+    </div>
+      
+    <script>
+        var projects = document.querySelectorAll("#projects .card a");
+        var projectList = document.querySelector("#projectList");
+        
+        for (var i = 0; i < projects.length; i++) {
+            var listItem = document.createElement("li");
+            listItem.textContent = projects[i].textContent;
+            projectList.appendChild(listItem);
+        }
+    </script>
+    <hr>
+
+    <a href="#top">Back to the top</a>
+</body>
+</html>
