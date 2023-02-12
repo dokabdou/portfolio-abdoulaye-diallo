@@ -24,6 +24,7 @@ h1, h2, p{
 nav{
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 aside{text-align: right;}
