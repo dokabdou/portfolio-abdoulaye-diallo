@@ -3,18 +3,6 @@
     <div class="top-bar-right">
         <a href="{{ 'my_linkedin' | translate }}" target="_blank" class="linkedin-button">LinkedIn</a>
         <a href="{{ 'my_github' | translate }}" target="_blank" class="github-button">GitHub</a>
-		<div class="search-section">
-			<input 
-				type="search" 
-				id="search-input" 
-				[(ngModel)]="searchQuery"
-				(keyup.enter)="onSearch()"
-				[placeholder]="'search' | translate">
-			
-			<button id="search-button" (click)="onSearch()">
-				{{ 'go' | translate }}
-			</button>
-		</div>
         <button class="lang-toggle-btn" (click)='toggleLanguage()' title="Switch Language">
 			<span class="flag-icon" *ngIf="currentLang === 'en'">fr FR</span>
 			<span class="flag-icon" *ngIf="currentLang === 'fr'">en EN</span>
