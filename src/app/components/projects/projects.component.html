@@ -21,9 +21,13 @@
       </div>
 
       <div class="card-footer" *ngIf="project.link">
-        <a [href]="project.link" target="_blank" class="project-link">
+		<a *ngIf="project.link.startsWith('https')" [href]="project.link" target="_blank" class="project-link">
           <i class="pi pi-external-link"></i> {{ 'view_project' | translate }}
         </a>
+
+        <span *ngIf="!project.link.startsWith('https')" class="project-message">
+           <i class="pi pi-info-circle"></i> {{ project.link }}
+        </span>
       </div>
 
     </div>
@@ -46,6 +50,16 @@
 
 			<div class="card-content">
 				<p>{{ upcoming.description }}</p>
+			</div>
+
+			<div class="card-footer" *ngIf="upcoming.link">
+				<a *ngIf="upcoming.link.startsWith('https')" [href]="upcoming.link" target="_blank" class="project-link">
+				<i class="pi pi-external-link"></i> {{ 'view_project' | translate }}
+				</a>
+
+				<span *ngIf="!upcoming.link.startsWith('https')" class="project-message">
+				<i class="pi pi-info-circle"></i> {{ upcoming.link }}
+				</span>
 			</div>
 		</div>
 	</div>
