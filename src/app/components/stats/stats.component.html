@@ -1,0 +1,51 @@
+<div class="stats-container">
+  
+  <h1 class="page-title">{{ 'stats' | translate }}</h1>
+  
+  <div class="stats-grid">
+    
+    <div class="stat-card">
+      <div class="icon-circle visit-color">
+        <i class="pi pi-eye"></i>
+      </div>
+      <h3>{{ 'website_visits' | translate }}</h3>
+      <p class="stat-number">{{ visits }}</p>
+    </div>
+
+    <div class="stat-card clickable" (click)="like()">
+      <div class="icon-circle like-color">
+        <i class="pi pi-heart-fill"></i>
+      </div>
+      <h3>{{ 'website_likes' | translate }}</h3>
+      <p class="stat-number">{{ likes }}</p>
+      <small class="tap-hint">(Tap to like)</small>
+    </div>
+
+    <div class="stat-card">
+      <div class="icon-circle location-color">
+        <i class="pi pi-map-marker"></i>
+      </div>
+      <h3>{{ 'location' | translate }}</h3>
+      <p class="stat-text">{{ 'my_locations' | translate }}</p>
+    </div>
+
+    <div class="stat-card">
+      <div class="icon-circle job-color">
+        <i class="pi pi-briefcase"></i>
+      </div>
+      <h3>{{ 'job' | translate }}</h3>
+      <p class="stat-text">{{ 'my_current_job' | translate }}</p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="buttons-wrapper">
+  <div class="button-container-left">
+    <button class="left-button" routerLink="/contact">{{ 'contact' | translate }}</button>
+  </div>
+  <div class="button-container-right">
+    <button class="right-button" routerLink="/about">{{ 'about' | translate }}</button>
+  </div>
+</div>

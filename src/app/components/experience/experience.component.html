@@ -1,0 +1,65 @@
+<h1 class="page-title">{{ 'experience' | translate }}</h1>
+
+<div class="card details-section" id="details-section" *ngIf="selectedExperience">
+  <div class="details-container">
+    
+    <div class="details-left">
+      <h2 class="details-title">{{ selectedExperience.title }}</h2>
+      <div class="details-date">{{ selectedExperience.date }}</div>
+      <div class="details-company">{{ selectedExperience.company }}</div>
+    </div>
+
+    <div class="details-right">
+      <h3 class="description-header">{{ 'description' | translate }}</h3> 
+	  <div class="description-text">{{ selectedExperience.description }}</div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="card">
+  <p-timeline [value]="experienceList" align="alternate" styleClass="customized-timeline">
+
+    <ng-template pTemplate="marker" let-exp>
+      <span class="custom-marker shadow-2" [style.backgroundColor]="exp.color">
+        <i [class]="exp.icon"></i>
+      </span>
+    </ng-template>
+
+    <ng-template pTemplate="content" let-exp>
+      <div (click)="selectExperience(exp)" class="timeline-card-wrapper">
+        <p-card 
+          [header]="exp.title" 
+          [subheader]="exp.date" 
+          styleClass="timeline-card"
+          [styleClass]="selectedExperience === exp ? 'timeline-card selected-card' : 'timeline-card'">
+          
+          <div class="card-body">
+            <h4 class="institution-name" 
+                [style.color]="selectedExperience === exp ? 'white' : '#007bff'" 
+                style="margin-top: 0.5rem;">
+                {{ exp.company }}
+            </h4>
+            <p class="courses-list" style="margin-bottom: 0.5rem; color: #555; line-height: 1.5;">
+              <strong>{{ 'highlight' | translate }}:</strong> {{ exp.highlight }}
+            </p>
+          </div>
+
+        </p-card>
+      </div>
+    </ng-template>
+
+  </p-timeline>
+</div>
+
+
+
+<div class="buttons-wrapper">
+  <div class="button-container-left">
+    <button class="left-button" routerLink="/education">{{ 'education' | translate }}</button>
+  </div>
+	<div class="button-container-right">
+		<button class="right-button" routerLink="/skills">{{ 'skills' | translate }}</button>
+	</div>
+</div>

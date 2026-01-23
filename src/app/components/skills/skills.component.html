@@ -1,0 +1,29 @@
+<div class="skills-container">
+  
+  <h1 class="page-title">{{ 'skills' | translate }}</h1>
+
+  <div class="cards-grid">
+    
+    <div *ngFor="let category of skillCategories" class="skill-card">
+      <div class="card-header">
+        <div class="icon-circle" [style.backgroundColor]="category.color">
+          <i [class]="category.icon"></i>
+        </div>
+        <h3>{{ category.title }}</h3>
+      </div>
+      
+      <div class="skills-content">
+        <span *ngFor="let skill of category.skillsList" class="skill-bubble">
+          {{ skill }}
+        </span>
+      </div>
+    </div>
+</div>
+
+<div class="buttons-wrapper">
+  <div class="button-container-left">
+	<button class="left-button" routerLink="/experience">{{ 'experience' | translate }}</button>
+  </div>
+  <div class="button-container-right">
+	<button class="right-button" routerLink="/projects">{{ 'projects' | translate }}</button>
+  </div>

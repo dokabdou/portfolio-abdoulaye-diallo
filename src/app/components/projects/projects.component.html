@@ -1,0 +1,62 @@
+<div class="projects-container">
+  
+  <h1 class="page-title">{{ 'projects' | translate }}</h1>
+
+  <div class="projects-grid">
+    
+    <div *ngFor="let project of projects" class="project-card">
+      
+      <div class="card-header">
+        <div class="icon-circle" [style.backgroundColor]="project.color">
+          <i [class]="project.icon"></i>
+        </div>
+        <div class="header-text">
+          <h3>{{ project.title }}</h3>
+          <span class="project-date">{{ project.date }}</span>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <p>{{ project.description }}</p>
+      </div>
+
+      <div class="card-footer" *ngIf="project.link">
+        <a [href]="project.link" target="_blank" class="project-link">
+          <i class="pi pi-external-link"></i> {{ 'view_project' | translate }}
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+	<div class="projects-grid">
+		<h2>{{ 'upcoming_projects' | translate }}</h2>
+		<div class="project-card" *ngFor="let upcoming of upcomingProjects">
+
+			<div class="card-header">
+				<div class="icon-circle" [style.backgroundColor]="upcoming.color">
+					<i [class]="upcoming.icon"></i>
+				</div>
+				<div class="header-text">
+					<h3>{{ upcoming.title }}</h3>
+					<span class="project-date">{{ upcoming.date }}</span>
+				</div>
+			</div>
+
+			<div class="card-content">
+				<p>{{ upcoming.description }}</p>
+			</div>
+		</div>
+	</div>
+
+  <div class="buttons-wrapper">
+    <div class="button-container-left">
+      <button class="left-button" routerLink="/skills">{{ 'skills' | translate }}</button>
+    </div>
+    <div class="button-container-right">
+      <button class="right-button" routerLink="/contact">{{ 'contact' | translate }}</button>
+    </div>
+  </div>
+
+</div>

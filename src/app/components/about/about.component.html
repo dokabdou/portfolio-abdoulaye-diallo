@@ -1,0 +1,100 @@
+<div class="about-container">
+  
+  <div class="about-grid">
+    
+    <mat-card class="main-text-card">
+      <mat-card-header>
+        <mat-card-title class="page-title">
+          {{ 'about' | translate }} <span class="highlight-name">{{ 'name' | translate }}</span>
+        </mat-card-title>
+      </mat-card-header>
+      
+      <mat-card-content class="text-content">
+        <p>{{ 'description_1' | translate }}</p>
+        <p>{{ 'description_2' | translate }}</p>
+        <p>{{ 'description_3' | translate }}</p>
+        
+        <div class="resume-section">
+          <button mat-raised-button color="primary" class="resume-btn" (click)="downloadResume()">
+            <i class="pi pi-download"></i> {{ 'download_resume' | translate }}
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <div class="right-column">
+      
+      <mat-card class="profile-pic-card">
+        <img src="assets/Diallo_2.png" alt="Abdoulaye" class="profile-img">
+    	</mat-card>
+
+      <mat-card class="info-card">
+        <mat-card-content>
+          
+          <div class="info-item">
+            <div class="icon-box"><i class="pi pi-flag"></i></div>
+            <div class="info-text">
+              <span class="label">{{ 'nationality' | translate }}</span>
+              <span class="value">{{ 'american' | translate }}</span> 
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-box"><i class="pi pi-phone"></i></div>
+            <div class="info-text">
+              <span class="label">{{ 'phone' | translate }}</span>
+              <span class="value">{{ 'my_phone' | translate }}</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-box"><i class="pi pi-envelope"></i></div>
+            <div class="info-text">
+              <span class="label">{{ 'email' | translate }}</span>
+              <span class="value">{{ 'my_email' | translate }}</span>
+            </div>
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+
+	  <mat-card class="info-card">
+        <mat-card-content>
+          
+          <div class="info-item">
+            <div class="icon-box"><i class="pi pi-book"></i></div>
+            <div class="info-text">
+              <span class="label">{{ 'hobbies' | translate }}</span>
+              <span class="value">{{ 'hobby_1' | translate }}</span>
+			  <span class="value">{{ 'hobby_2' | translate }}</span>
+			  <span class="value">{{ 'hobby_3' | translate }}</span>
+
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-box"><i class="pi pi-face-smile"></i></div>
+            <div class="info-text">
+              <span class="label">{{ 'sports' | translate }}</span>
+              <span class="value">{{ 'sport_1' | translate }}</span>
+              <span class="value">{{ 'sport_2' | translate }}</span>
+              <span class="value">{{ 'sport_3' | translate }}</span>
+            </div>
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+  </div>
+
+  <div class="buttons-wrapper">
+    <div class="button-container-left">
+
+    </div>
+    <div class="button-container-right">
+      <button class="right-button" routerLink="/education">{{ 'education' | translate }}</button>
+    </div>
+  </div>
+
+</div>

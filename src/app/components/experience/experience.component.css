@@ -1,0 +1,147 @@
+.custom-marker {
+	display: flex;
+	width: 2rem;
+	height: 2rem;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.timeline-card-wrapper {
+	cursor: pointer;
+}
+
+::ng-deep .timeline-card .p-card-body {
+	padding: 2rem !important;
+}
+
+::ng-deep .timeline-card .p-card-content {
+	padding: 0 !important;
+}
+
+::ng-deep .timeline-card {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+	border: 1px solid #e5e7eb !important;
+	border-radius: 12px !important;
+	background-color: #ffffff;
+	margin-bottom: 1rem;
+	transition: all 0.3s ease;
+}
+
+::ng-deep .timeline-card:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+	transform: translateY(-3px);
+}
+
+::ng-deep .selected-card {
+	background-color: #007bff !important;
+	border: none !important;
+	box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4) !important;
+}
+
+::ng-deep .timeline-card .p-card-title {
+	font-weight: 700;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+::ng-deep .p-timeline-event-content,
+::ng-deep .p-timeline-event-opposite {
+	line-height: 1;
+}
+
+.details-section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 0;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	background-color: white;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.details-container {
+	display: flex;
+	flex-direction: row;
+	min-height: 250px;
+}
+
+.details-left {
+	flex: 1;
+	background-color: #f8f9fa;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-right: 1px solid #e0e0e0;
+}
+
+.details-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.details-date {
+	font-size: 1.1rem;
+	color: #666;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+}
+
+.details-company {
+	font-size: 1.2rem;
+	color: #007bff;
+	font-weight: 600;
+}
+
+.details-right {
+	flex: 1;
+	padding: 2rem;
+	background-color: #fff;
+}
+
+.description-header {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	border-bottom: 2px solid #f0f0f0;
+	padding-bottom: 0.5rem;
+	display: inline-block;
+}
+
+.description-text {
+	font-size: 1rem;
+	color: #444;
+	line-height: 1.6;
+}
+
+
+@media screen and (max-width: 768px) {
+	.details-container {
+		flex-direction: column;
+	}
+
+	.details-left {
+		border-right: none;
+		border-bottom: 1px solid #e0e0e0;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	::ng-deep .customized-timeline .p-timeline-event:nth-child(even) {
+		flex-direction: row !important;
+	}
+
+	::ng-deep .customized-timeline .p-timeline-event:nth-child(even) .p-timeline-event-content {
+		text-align: left !important;
+	}
+
+	::ng-deep .customized-timeline .p-timeline-event-opposite {
+		flex: 0;
+	}
+}

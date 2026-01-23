@@ -1,0 +1,42 @@
+<header class="top-bar">
+    <a routerLink="/" class="home-button">{{ 'name' | translate }}</a>
+    <div class="top-bar-right">
+        <a href="{{ 'my_linkedin' | translate }}" target="_blank" class="linkedin-button">LinkedIn</a>
+        <a href="{{ 'my_github' | translate }}" target="_blank" class="github-button">GitHub</a>
+		<div class="search-section">
+			<input 
+				type="search" 
+				id="search-input" 
+				[(ngModel)]="searchQuery"
+				(keyup.enter)="onSearch()"
+				[placeholder]="'search' | translate">
+			
+			<button id="search-button" (click)="onSearch()">
+				{{ 'go' | translate }}
+			</button>
+		</div>
+        <button class="lang-toggle-btn" (click)='toggleLanguage()' title="Switch Language">
+			<span class="flag-icon" *ngIf="currentLang === 'en'">fr FR</span>
+			<span class="flag-icon" *ngIf="currentLang === 'fr'">en EN</span>
+		</button>
+    </div>
+</header>
+
+<div class="main-container">
+    <nav class="sidebar">
+        <ul>
+            <li><button routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ 'about' | translate }}</button></li>
+            <li><button routerLink="/education" routerLinkActive="active">{{ 'education' | translate }}</button></li>
+            <li><button routerLink="/experience" routerLinkActive="active">{{ 'experience' | translate }}</button></li>
+			<li><button routerLink="/skills" routerLinkActive="active">{{ 'skills' | translate }}</button></li>
+            <li><button routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ 'projects' | translate }}</button></li>
+            <li><button routerLink="/contact" routerLinkActive="active">{{ 'contact' | translate }}</button></li>
+            <li><button routerLink="/stats" routerLinkActive="active">{{ 'stats' | translate }}</button></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <!-- Routed components will be displayed here -->
+        <router-outlet></router-outlet>
+    </main>
+</div>

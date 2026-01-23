@@ -1,0 +1,66 @@
+<div class="card">
+  <h1 class="page-title">{{ 'education' | translate }}</h1>
+  
+  <p-timeline [value]="educationList" align="alternate" styleClass="customized-timeline">
+    
+    <ng-template pTemplate="marker" let-edu>
+      <span class="custom-marker shadow-2" [style.backgroundColor]="edu.color">
+        <i [class]="edu.icon"></i>
+      </span>
+    </ng-template>
+
+    <ng-template pTemplate="content" let-edu>
+      <div (click)="selectEducation(edu)" class="timeline-card-wrapper">
+        <p-card 
+          [header]="edu.title" 
+          [subheader]="edu.date" 
+          styleClass="timeline-card"
+          [styleClass]="selectedEducation === edu ? 'timeline-card selected-card' : 'timeline-card'">
+          
+          <div class="card-body">
+            <h4 class="institution-name" 
+                [style.color]="selectedEducation === edu ? 'white' : '#007bff'" 
+                style="margin-top: 0.5rem;">
+                {{ edu.institution }}
+            </h4>
+            
+            <p class="courses-list" 
+               [style.color]="selectedEducation === edu ? 'white' : '#555'" 
+               style="margin-bottom: 0.5rem; line-height: 1.5;">
+              <strong>{{ 'key_courses' | translate }}:</strong> {{ edu.keyCourses }}
+            </p>
+          </div>
+
+        </p-card>
+      </div>
+    </ng-template>
+
+  </p-timeline>
+</div>
+
+<div class="card details-section" id="details-section" *ngIf="selectedEducation">
+  <div class="details-container">
+    
+    <div class="details-left">
+      <h2 class="details-title">{{ selectedEducation.title }}</h2>
+      <div class="details-date">{{ selectedEducation.date }}</div>
+      <div class="details-institution">{{ selectedEducation.institution }}</div>
+    </div>
+
+    <div class="details-right">
+      <h3 class="courses-header">{{ 'courses' | translate }}</h3> <ul class="course-bullets">
+        <li *ngFor="let course of selectedEducation.courses">{{ course }}</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="buttons-wrapper">
+  <div class="button-container-left">
+    <button class="left-button" routerLink="/about">{{ 'about' | translate }}</button>
+  </div>
+  <div class="button-container-right">
+    <button class="right-button" routerLink="/experience">{{ 'experience' | translate }}</button>
+  </div>
+</div>
