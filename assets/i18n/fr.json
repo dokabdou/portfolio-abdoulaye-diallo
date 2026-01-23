@@ -54,7 +54,7 @@
   "project_0_title": "Ce Portfolio Personnel",
   "project_0_date": "2026",
   "project_0_description": "J'ai développé ce portfolio personnel en utilisant Angular pour le frontend et Google Sheet pour le backend, ce qui m'a permis d'avoir un backend sans serveur. J'utilise deux feuilles Google Sheets, une pour les statistiques et une pour la page de contact. Pour que cela fonctionne, un script est déployé depuis Google Sheets, auquel le frontend Angular se connecte afin d'envoyer et recevoir des données. Le site web présente mes projets, mes compétences et mon expérience de manière visuellement.",
-  "project_0_link": "",
+  "project_0_link": "https://github.com/dokabdou/portfolio-abdoulaye-diallo",
   "project_0_color": "#a3c3f3",
   "project_0_icon": "pi pi-address-book",
 
