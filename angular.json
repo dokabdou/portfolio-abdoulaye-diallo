@@ -79,6 +79,9 @@
           "options": {
             "buildTarget": "angular-portfolio:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { TranslateModule, TranslateService } from "@ngx-translate/core";
-import { MatCardModule, MatCardTitle } from "@angular/material/card";
+import { MatCardModule } from "@angular/material/card";
 import { TimelineModule } from "primeng/timeline";
 import { CardModule } from "primeng/card";
 import { ButtonModule } from "primeng/button";
@@ -13,7 +13,6 @@ import { ButtonModule } from "primeng/button";
   styleUrls: ["./experience.component.css", "../../../styles.css"],
   imports: [
 	CommonModule,
-	MatCardTitle, 
 	MatCardModule, 
 	TranslateModule, 
 	RouterModule, 
