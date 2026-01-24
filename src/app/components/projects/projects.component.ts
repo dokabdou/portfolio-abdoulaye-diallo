@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   updateProjects() {
-    const projectIds = [0, 1, 2, 3, 4, 5]; // to update when adding new projects
+    const projectIds = [6, 5, 4, 3, 2, 1]; // to update when adding new projects
 	const upcomingProjectsIds = [1]; // to update when adding new upcoming projects
 
 

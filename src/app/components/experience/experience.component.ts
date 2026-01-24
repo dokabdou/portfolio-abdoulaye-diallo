@@ -27,7 +27,7 @@ export class ExperienceComponent implements OnInit {
 	selectedExperience: any = null;
 
 	constructor(private translate: TranslateService) {
-		const experienceIds = [1, 2, 3]; // to update when adding new experiences
+		const experienceIds = [3, 2, 1]; // to update when adding new experiences
 
 		this.experienceList = experienceIds.map((id) => {
 			return {
