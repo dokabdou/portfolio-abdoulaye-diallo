@@ -31,14 +31,14 @@ export class ExperienceComponent implements OnInit {
 
 		this.experienceList = experienceIds.map((id) => {
 			return {
-				title: this.translate.instant(`experience_${id}_title`),
-				company: this.translate.instant(`experience_${id}_company`),
-				date: this.translate.instant(`experience_${id}_date`),
-				description: this.translate.instant(`experience_${id}_description`),
-				highlight: this.translate.instant("exp_1_highlight"),
-				color: this.translate.instant(`experience_${id}_color`),
-				icon: this.translate.instant(`experience_${id}_icon`),
-			};
+        title: this.translate.instant(`experience_${id}_title`),
+        company: this.translate.instant(`experience_${id}_company`),
+        date: this.translate.instant(`experience_${id}_date`),
+        description: this.translate.instant(`experience_${id}_description`),
+        highlight: this.translate.instant(`exp_${id}_highlight`),
+        color: this.translate.instant(`experience_${id}_color`),
+        icon: this.translate.instant(`experience_${id}_icon`),
+      };
 		});
 	}
 
