@@ -10,10 +10,10 @@
       </mat-card-header>
       
       <mat-card-content class="text-content">
-        <p>{{ 'description_1' | translate }}</p>
-        <p>{{ 'description_2' | translate }}</p>
-        <p>{{ 'description_3' | translate }}</p>
-        
+        <p [innerHTML]="'description_1' | translate"></p>
+        <p [innerHTML]="'description_2' | translate"></p>
+        <p [innerHTML]="'description_3' | translate"></p>
+
         <div class="resume-section">
           <button mat-raised-button color="primary" class="resume-btn" (click)="downloadResume()">
             <i class="pi pi-download"></i> {{ 'download_resume' | translate }}

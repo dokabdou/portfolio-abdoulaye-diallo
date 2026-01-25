@@ -20,8 +20,8 @@
   "key_courses": "Cours clés: ",
   "description": "Description",
 
-  "description_1": "Bonjour! Je m'appelle Abdoulaye, un développeur logiciel passionné qui aime participer à des projets innovants ainsi que créer les miens. Le dernier projet sur lequel j'ai travaillé dernièrement était une application fullstack utilisant Angular pour le frontend et Java(Quarkus) pour le backend. Ce projet était une plateforme web, utilisée pour l'intégration et la visualisation des données IoT dans les contextes de Smart City et de bâtiments intelligents. J'ai développé un module de réservation générique (salles, places de parking) pour les bâtiments intelligents et intégré dans l'UDP. Ainsi que la conception de la base de données, utilisant MongoBD, et l'interface utilisateur pour la gestion et la réservation des ressources dans les bâtiments intelligents.",
-  "description_2": "Avec une formation en informatique, ayant éffectué mon stage de fin d'études avec l'équipe Inno Lab chez Atos Pessac, complétant mon Master en informatique avec une spécialisation en génie logiciel, je suis impatient de commencer à travailler. J'ai de l'expérience avec diverses technologies et frameworks. Je me suis récemment intéressé à RootMe, et j'essaie de relever des défis pour améliorer mes compétences en cybersécurité. Je reste curieux et prêt à acquérir plus de compétences dans divers autres domaines.",
+  "description_1": "Bienvenue! Je m'appelle Abdoulaye DIALLO, un <b>développeur logiciel</b> passionné qui aime participer à des <u>projets innovants</u> ainsi que créer les miens. Le dernier projet sur lequel j'ai travaillé dernièrement était une application fullstack utilisant <u>Angular</u> pour le frontend et <u>Java(Quarkus)</u> pour le backend (voir le projet <u>Smart Building</u> dans la section projets).",
+  "description_2": "Avec une formation en informatique, ayant éffectué mon stage de fin d'études avec l'équipe <b>Inno Lab</b> chez Atos Pessac, complétant mon <b>Master en informatique</b> avec une spécialisation en <b>génie logiciel</b>, je suis impatient de commencer à travailler. J'ai de l'expérience avec diverses technologies et frameworks. Je me suis récemment intéressé à <u>RootMe</u>, et j'essaie de relever des défis pour améliorer mes compétences en <u>cybersécurité</u>. Je reste curieux et prêt à acquérir plus de compétences dans divers autres domaines.",
   "description_3": "N'hésitez pas à explorer mon portfolio pour en savoir plus sur mes projets et compétences. Si vous avez des questions ou souhaitez vous connecter, n'hésitez pas à me contacter via la section contact. Merci de visiter mon portfolio!",
 
   "education_1_title": "Master en Informatique - Génie Logiciel",
@@ -59,7 +59,7 @@
   "project_5_title": "Smart Building — Module de Réservation Générique",
   "project_5_date": "2025",
   "project_5_description": "J'ai développé un module de réservation générique (salles, places de parking) intégré à UDP durant mon stage. J'ai également structuré la base de données et l'interface utilisateur pour gérer et réserver les ressources dans les bâtiments intelligents. J'ai créé un composant réutilisable pour d'autres verticales de la plateforme.",
-  "project_5_link": "Projet Privé - Non Disponible",
+  "project_5_link": "Projet Privé Atos - Non Disponible",
   "project_5_color": "#2196F3",
   "project_5_icon": "pi pi-building",
 
@@ -92,12 +92,20 @@
   "project_1_icon": "pi pi-lightbulb",
 
   "upcoming_projects": "Projets à venir",
-  "upcoming_project_1_title": "Reddit Saved Mosaic",
-  "upcoming_project_1_date": "En cours",
-  "upcoming_project_1_description": "Une application web qui crée une mosaïque de publications (images, vidéos) et/ou de commentaires que l'utilisateur a sauvegardés sur son compte Reddit. Les utilisateurs se connectent avec leurs identifiants Reddit, et l'application récupère leurs publications sauvegardées pour générer une mosaïque de publications Reddit et/ou de commentaires. Les fonctionnalités incluront : option de recherche, tri par subreddit, tri par type (image, commentaire, vidéo), tri par date, affichage de la publication Reddit sur la page web, avec la possibilité de l'ouvrir directement sur Reddit. Plusieurs versions de cette idée existent déjà, mais je prévois d'ajouter davantage de fonctionnalités et d'offrir une expérience utilisateur différente.",
+
+  "upcoming_project_2_title": "Reddit Saved Mosaic",
+  "upcoming_project_2_date": "En cours",
+  "upcoming_project_2_description": "Une application web qui crée une mosaïque de publications (images, vidéos) et/ou de commentaires que l'utilisateur a sauvegardés sur son compte Reddit. Les utilisateurs se connectent avec leurs identifiants Reddit, et l'application récupère leurs publications sauvegardées pour générer une mosaïque de publications Reddit et/ou de commentaires. Les fonctionnalités incluront : option de recherche, tri par subreddit, tri par type (image, commentaire, vidéo), tri par date, affichage de la publication Reddit sur la page web, avec la possibilité de l'ouvrir directement sur Reddit. Plusieurs versions de cette idée existent déjà, mais je prévois d'ajouter davantage de fonctionnalités et d'offrir une expérience utilisateur différente.",
+  "upcoming_project_2_link": "Repo GitHub - Bientôt Disponible",
+  "upcoming_project_2_color": "#FF4500",
+  "upcoming_project_2_icon": "pi pi-reddit",
+
+  "upcoming_project_1_title": "Home Server",
+  "upcoming_project_1_date": "Phase de planification",
+  "upcoming_project_1_description": "Je prévois de transformer l'un de mes anciens ordinateurs en serveur. Le serveur hébergera plusieurs services, notamment un site web personnel, un système de stockage de fichiers, une galerie photo/vidéo. Je prévois d'utiliser Docker pour containeriser les différents services afin d'assurer une gestion et un déploiement faciles. Je n'ai pas encore d'expérience dans ce domaine, ce projet sera donc une expérience d'apprentissage pour moi.",
   "upcoming_project_1_link": "Repo GitHub - Bientôt Disponible",
-  "upcoming_project_1_color": "#FF4500",
-  "upcoming_project_1_icon": "pi pi-reddit",
+  "upcoming_project_1_color": "#09d127",
+  "upcoming_project_1_icon": "pi pi-server",
 
   "view_project": "Voir le projet",
 

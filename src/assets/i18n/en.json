@@ -17,11 +17,11 @@
   "download_resume": "Download Resume",
 
   "courses": "Courses",
-  "key_courses": "Key Courses: ",
+  "key_courses": "Key Courses ",
   "description": "Description",
 
-  "description_1": "Hello! I'm Abdoulaye, a passionate software developer who loves participating in innovative projects as well as creating my own. The last project I worked on was a fullstack application using Angular for the frontend and Java(Quarkus) for the backend. This project was a web platform, used for IoT data integration and visualization in Smart City and smart building contexts. I developed a generic booking module (rooms, parking spots) for smart buildings and integrated it into the UDP. As well as structuring the database, using MongoBD, and the UI for managing and booking the resources in smart buildings.",
-  "description_2": "With a background in Computer Science, having just completed my end-of-studies internship with the Inno Lab team at Atos Pessac, completing my Master's degree in Computer Science with a specialization in Software Engineering, I am eager to start work. I am experienced with various technologies and frameworks. I have recently taken an interest in RootMe, and try to complete challenges to improve my cybersecurity skills. I remain curious and ready to gain more skills in various other areas.",
+  "description_1": "Welcome to my portfolio! I am Abdoulaye DIALLO, a passionate <b>software developer</b>, who loves participating in <u>innovative projects</u> as well as creating my own. The last project I worked on was a fullstack application using <u>Angular</u> for the fronted and <u>Java(Quarkus)</u> for the backend (see the projects section's <u>Smart Building</u> project).",
+  "description_2": "With a background in Computer Science, having just completed my end-of-studies internship with the <b>Inno Lab</b> team at Atos Pessac, completing my <b>Master's degree in Computer Science</b> with a specialization in <b>Software Engineering</b>, I am eager to start work. I am experienced with various technologies and frameworks. I have recently taken an interest in <u>RootMe</u>, and try to complete challenges to improve my <u>cybersecurity skills</u>. I remain curious and ready to gain more skills in various other areas.",
   "description_3": "Feel free to explore my portfolio to learn more about my projects and skills. If you have any questions or would like to connect, don't hesitate to reach out through the contact section. Thank you for visiting my portfolio!",
 
   "education_1_title": "Master's Degree in Computer Science - Software Engineering",
@@ -49,6 +49,8 @@
   "education_2_courses": "Data Analysis, Computer Vision, Compiler Design, MultiCore and GPU Programming, Theory and Practice of Deep Learning, Basic Korean 1, Next Generation Network, Data Structures, Society and Human Behaviour",
   "education_1_courses": "Object Oriented Programming,Software Architecture, Advanced DataBases, Formal Design, Large-Scale Programming, Project Management, Web Programming, Applied Algorithms",
 
+  "past_projects": "Past Projects",
+
   "project_6_title": "This very Portfolio Website",
   "project_6_date": "2026",
   "project_6_description": "I developed this portfolio website using Angular for the frontend and Google Sheets for the backend, giving me a serverless backend. I am using two sheets on google sheets, one for the stats and one for the contact page. To make this work a script is deployed from Google Sheets, which the Angular frontend connects to in order to send and receive data. The website showcases my projects, skills, and experience in a visually appealing way.",
@@ -59,14 +61,14 @@
   "project_5_title": "Smart Building — Generic Booking Module (UDP Vertical)",
   "project_5_date": "2025",
   "project_5_description": "I developed a generic booking module (rooms, parking spots) integrated into UDP during my internship. I also structured the database and UI for managing and booking resources in smart buildings. And I created a reusable component for other verticals of the platform.",
-  "project_5_link": "Private Project - Not Available",
+  "project_5_link": "Proprietary Project - Not Available",
   "project_5_color": "#2196F3",
   "project_5_icon": "pi pi-building",
 
   "project_4_title": "XShape",
   "project_4_date": "2024",
   "project_4_description": "As a duo we developed a graphical application similar to Paint, implementing several design patterns. The app allows the user to play around with predefined shapes via a drag-and-drop feature, as well as resizing, moving, and combining shapes.",
-  "project_4_link": "https://github.com/dokabdou/AL_prj",
+  "project_4_link": "",
   "project_4_color": "#4CAF50",
   "project_4_icon": "pi pi-pencil",
 
@@ -92,12 +94,20 @@
   "project_1_icon": "pi pi-lightbulb",
 
   "upcoming_projects": "Upcoming Projects",
-  "upcoming_project_1_title": "Reddit Saved Mosaic",
-  "upcoming_project_1_date": "Ongoing",
-  "upcoming_project_1_description": "A web application that creates a mosaic of posts(images, videos) and/or comments that a user saved on their Reddit account. Users log in with their Reddit credentials, and the app will fetch their saved posts to generate a mosaic of reddit posts and/or comments. Features will include: Search option, sort by subreddit, sort by type (image, comment, video), sort by date, display the reddit post in the webpage, with the option to open it directly on reddit. A few versions of this idea exist, but I plan to add more features and provide a different user experience.",
+
+  "upcoming_project_2_title": "Reddit Saved Mosaic",
+  "upcoming_project_2_date": "Ongoing",
+  "upcoming_project_2_description": "A web application that creates a mosaic of posts(images, videos) and/or comments that a user saved on their Reddit account. Users log in with their Reddit credentials, and the app will fetch their saved posts to generate a mosaic of reddit posts and/or comments. Features will include: Search option, sort by subreddit, sort by type (image, comment, video), sort by date, display the reddit post in the webpage, with the option to open it directly on reddit. A few versions of this idea exist, but I plan to add more features and provide a different user experience.",
+  "upcoming_project_2_link": "GitHub Repo - Coming Soon",
+  "upcoming_project_2_color": "#FF4500",
+  "upcoming_project_2_icon": "pi pi-reddit",
+
+  "upcoming_project_1_title": "Home Server",
+  "upcoming_project_1_date": "Planning Phase",
+  "upcoming_project_1_description": "I plan on turning one of my old computers into a home server. The server will host multiple services, including a personal website, a file storage system, a photo/video gallery. I plan to use Docker to containerize the different services for easy management and deployment. I am new to home servers, so this project will be a learning experience for me as well.",
   "upcoming_project_1_link": "GitHub Repo - Coming Soon",
-  "upcoming_project_1_color": "#FF4500",
-  "upcoming_project_1_icon": "pi pi-reddit",
+  "upcoming_project_1_color": "#09d127",
+  "upcoming_project_1_icon": "pi pi-server",
 
   "view_project": "View Project",
 
