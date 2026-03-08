@@ -1,7 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
-import { TranslateModule, TranslateService } from "@ngx-translate/core";
+import {
+  TranslateModule,
+  TranslateService,
+  LangChangeEvent,
+} from "@ngx-translate/core";
 import { TimelineModule } from "primeng/timeline";
 import { CardModule } from "primeng/card";
 import { ButtonModule } from "primeng/button";
@@ -23,32 +27,44 @@ import { ButtonModule } from "primeng/button";
 export class EducationComponent implements OnInit {
   educationList: any[] = [];
   selectedEducation: any = null;
+  educationIds = [1, 2, 3]; // to update when adding new education entries
 
-  constructor(private translate: TranslateService) {
-	const educationIds = [1, 2, 3]; // to update when adding new education entries
-	
-	this.educationList = educationIds.map((id) => {
-	  return {
-		title: this.translate.instant(`education_${id}_title`),
-		institution: this.translate.instant(`education_${id}_institution`),
-		date: this.translate.instant(`education_${id}_date`),
-		keyCourses: this.translate.instant(`education_${id}_key_courses`),
-		courses: this.translate.instant(`education_${id}_courses`).split(",").sort(),
-		color: this.translate.instant(`education_${id}_color`),
-		icon: this.translate.instant(`education_${id}_icon`),
-	  };
-	});
-  }
+  constructor(private translate: TranslateService) {}
 
   ngOnInit() {
-	//this.updateEducation();
+	this.updateEducationData();
+
+	this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+		this.updateEducationData();
+	});
     if (this.educationList.length > 0) {
       this.selectedEducation = this.educationList[0];
     }
+  }
 
-	/* this.translate.onLangChange.subscribe((event: any) => {
-		this.updateEducation();
-	}); */
+  updateEducationData() {
+    this.educationList = this.educationIds.map((id) => {
+      return {
+        title: this.translate.instant(`education_${id}_title`),
+        institution: this.translate.instant(`education_${id}_institution`),
+        date: this.translate.instant(`education_${id}_date`),
+        keyCourses: this.translate.instant(`education_${id}_key_courses`),
+        courses: this.translate.instant(`education_${id}_courses`).split(",").sort(),
+        color: this.translate.instant(`education_${id}_color`),
+        icon: this.translate.instant(`education_${id}_icon`),
+      };
+    });
+
+	const currentlySelectedIndex = this.selectedEducation
+		? this.educationList.indexOf(this.selectedEducation)
+		: 0;
+		
+	if (this.educationList.length > 0) {
+		this.selectedEducation =
+			this.educationList[
+				currentlySelectedIndex !== -1 ? currentlySelectedIndex : 0
+			];
+	}
   }
 
   selectEducation(edu: any) {
@@ -64,7 +80,4 @@ export class EducationComponent implements OnInit {
       }
     }, 100);
   }
-
-  /* updateEducation() {
-	} */
 }
