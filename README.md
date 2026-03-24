@@ -3,3 +3,5 @@
 I developed this portfolio website using Angular for the frontend and Google Sheets for the backend, giving me a serverless backend. I am using two sheets on google sheets, one for the stats and one for the contact page. To make this work a script is deployed from Google Sheets, which the Angular frontend connects to in order to send and receive data. The website showcases my projects, skills, and experience in a visually appealing way.
 
 Portfolio Link : https://dokabdou.github.io/portfolio-abdoulaye-diallo/about
+
+To redeploy : ng deploy --base-href=/portfolio-abdoulaye-diallo/ --dir=dist/angular-portfolio

@@ -21,7 +21,7 @@ export class AboutComponent {
     if (lang === "fr") {
       filePath += "ADiallo_CV_FR_.pdf";
     } else {
-      filePath += "ADiallo_Eng_.pdf";
+      filePath += "ADiallo_CV_Eng_.pdf";
     }
     const fileName = `Abdoulaye_DIALLO_Resume_${lang.toUpperCase()}.pdf`;
 

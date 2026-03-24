@@ -38,8 +38,8 @@ export class ProjectsComponent implements OnInit {
   }
 
   updateProjects() {
-    const projectIds = [6, 5, 4, 3, 2, 1]; // to update when adding new projects
-	const upcomingProjectsIds = [2, 1]; // to update when adding new upcoming projects
+    const projectIds = [8, 7, 6, 5, 4, 3, 2, 1]; // to update when adding new projects
+	const upcomingProjectsIds = [1]; // to update when adding new upcoming projects
 
 
     this.projects = projectIds.map((id) => {
@@ -47,7 +47,8 @@ export class ProjectsComponent implements OnInit {
         title: this.translate.instant(`project_${id}_title`),
         date: this.translate.instant(`project_${id}_date`),
         description: this.translate.instant(`project_${id}_description`),
-        link: this.translate.instant(`project_${id}_link`),
+        gitLink: this.translate.instant(`project_${id}_git_link`),
+        webLink: this.translate.instant(`project_${id}_link`),
         color: this.translate.instant(`project_${id}_color`),
         icon: this.translate.instant(`project_${id}_icon`),
       };
@@ -56,13 +57,13 @@ export class ProjectsComponent implements OnInit {
 
 	this.upcomingProjects = upcomingProjectsIds.map((id) => {
 		return {
-			title: this.translate.instant(`upcoming_project_${id}_title`),
-			date: this.translate.instant(`upcoming_project_${id}_date`),
-			description: this.translate.instant(`upcoming_project_${id}_description`),
-			link: this.translate.instant(`upcoming_project_${id}_link`),
-			color: this.translate.instant(`upcoming_project_${id}_color`),
-			icon: this.translate.instant(`upcoming_project_${id}_icon`),
-		};
+      title: this.translate.instant(`upcoming_project_${id}_title`),
+      date: this.translate.instant(`upcoming_project_${id}_date`),
+      description: this.translate.instant(`upcoming_project_${id}_description`),
+      gitLink: this.translate.instant(`upcoming_project_${id}_git_link`),
+      color: this.translate.instant(`upcoming_project_${id}_color`),
+      icon: this.translate.instant(`upcoming_project_${id}_icon`),
+    };
 	});
   }
 }

@@ -53,15 +53,24 @@
         <p>{{ project.description }}</p>
       </div>
 
-      <div class="card-footer" *ngIf="project.link">
-		<a *ngIf="project.link.startsWith('https')" [href]="project.link" target="_blank" class="project-link">
-          <i class="pi pi-external-link"></i> {{ 'view_project' | translate }}
-        </a>
+      <div class="card-footer" *ngIf="project.gitLink || project.webLink">
 
-        <span *ngIf="!project.link.startsWith('https')" class="project-message">
-           <i class="pi pi-info-circle"></i> {{ project.link }}
-        </span>
-      </div>
+		<a *ngIf="project.gitLink?.startsWith('https')" 
+			[href]="project.gitLink" 
+			target="_blank" 
+			class="project-link">
+			<i class="pi pi-github"></i> {{ 'view_project' | translate }}
+		</a>
+
+		<a *ngIf="project.webLink?.startsWith('https')" 
+			[href]="project.webLink" 
+			target="_blank" 
+			class="project-link">
+			<i class="pi pi-external-link"></i> {{ 'go_to_webapp' | translate }}
+		</a>
+
+		</div>
+
 
     </div>
 
